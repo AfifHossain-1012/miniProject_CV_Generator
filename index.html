@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Resume Generator</title>
+</head>
+<body>
+
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2">CV Generator</h1>
+        <p class="text-center">By AFIF HOSSAIN IRFAN</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Personal Information</h3>
+
+                <div class="form-group">
+                
+                    <level for="nameField">YOUR NAME</level>
+                    <input type="text" id="nameField" class="form-control" placeholder="Enter your name">
+                
+                </div>
+
+                <div class="form-group mt-2">
+                
+                    <level for="contactField">YOUR CONTACT</level>
+                    <input type="text" id="contactField" class="form-control" placeholder="Enter your contact number">
+                
+                </div>
+
+                <div class="form-group mt-2">
+                
+                    <level for="addressField">YOUR ADDRESS</level>
+                    <textarea id="addressField" class="form-control" placeholder="Enter your address"></textarea>
+                
+                </div>
+
+                <p class="text-secondary mt-3">Add Social Links</p>
+
+                <div class="form-group mt-2">
+                
+                    <level for="fbField">FACEBOOK</level>
+                    <input type="text" id="fbField" class="form-control" placeholder="Enter your facebook link">
+                
+                </div>
+
+                <div class="form-group mt-2">
+                
+                    <level for="igField">INSTAGRAM</level>
+                    <input type="text" id="igField" class="form-control" placeholder="Enter your instagram link">
+                
+                </div>
+
+                <div class="form-group mt-2">
+                
+                    <level for="liField">LinkedIn</level>
+                    <input type="text" id="liField" class="form-control" placeholder="Enter your LinkedIn link">
+                
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <h3>Professional Information</h3>
+
+                <div class="form-group mt-2">
+                
+                    <level for="">Objective</level>
+                    <textarea class="form-control" placeholder="Enter here" rows="5"></textarea>
+                
+                </div>
+
+                <div class="form-group mt-2" id="we">
+                
+                    <level for="">Work Experience</level>
+                    <textarea class="form-control weField" placeholder="Enter here" rows="3"></textarea>
+                
+                    <div class="container text-center mt-2 " id="weAddButtons">
+                        <button onclick="addWEField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+
+                </div>
+
+                <div class="form-group mt-2" id="aq">
+                
+                    <level for="">Academic Qualifications</level>
+                    <textarea class="form-control aqField" placeholder="Enter here" rows="3"></textarea>
+                
+                    <div class="container text-center mt-2" id="aqAddButtons">
+                        <button onclick="addAQField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container text-center mt-3">
+            <button class="btn btn-primary btn-lg">Generate CV</button>
+        </div>
+
+    </div>
+
+    <div class="container" id="cv-tamplate">
+        <div class="row">
+
+            <div class="col-md-4 text-center py-5 background">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmz2dTS4vjBUWa3IIHStysngIsEiWjiQXEdh1jPYSww&s" alt="" class="img-fluid- myimg">
+            
+
+                <div class="container">
+                    <p>Afif Hossain Irfan.</p>
+                    <p>+880-1521536082</p>
+                    <p>Zahir & brothers, badurtala, bahaddarhat, chottogram</p>
+
+                    <hr/>
+
+                    <p><a href="#1">facebook</a></p>
+                    <p><a href="#1">instagram</a></p>
+                    <p><a href="#1">linkedin</a></p>
+
+                </div>
+            </div>
+
+            <div class="col-md-8">
+
+                <h1 class="text-center" style="font-weight: 1000">
+                    Afif Hossain Irfan
+                </h1>
+
+                <div class="card mt-4">
+
+                    <div class="card-header background">Objective</div>
+                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatum laboriosam corrupti aperiam consequatur perspiciatis voluptas soluta saepe delectus earum quasi debitis sequi hic ratione eligendi esse cupiditate sed excepturi neque. Voluptatem voluptas sit deleniti, officia facilis unde aspernatur, beatae in quidem quas id aperiam, placeat deserunt inventore. Odit, sint.</div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
