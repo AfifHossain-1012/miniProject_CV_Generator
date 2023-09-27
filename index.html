@@ -41,11 +41,11 @@
                 <div class="form-group mt-2">
                 
                     <level for="addressField">YOUR ADDRESS</level>
-                    <textarea id="addressField" class="form-control" placeholder="Enter your address"></textarea>
+                    <textarea id="addressField" class="form-control" placeholder="Enter your address" rows="3"></textarea>
                 
                 </div>
 
-                <p class="text-secondary mt-3">Add Social Links</p>
+                <h3 class="mt-2">Add Social Links</h3>
 
                 <div class="form-group mt-2">
                 
@@ -76,7 +76,7 @@
                 <div class="form-group mt-2">
                 
                     <level for="">Objective</level>
-                    <textarea class="form-control" placeholder="Enter here" rows="5"></textarea>
+                    <textarea id="objectiveField" class="form-control" placeholder="Enter here" rows="5"></textarea>
                 
                 </div>
 
@@ -106,7 +106,7 @@
         </div>
 
         <div class="container text-center mt-3">
-            <button class="btn btn-primary btn-lg">Generate CV</button>
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
         </div>
 
     </div>
@@ -119,30 +119,72 @@
             
 
                 <div class="container">
-                    <p>Afif Hossain Irfan.</p>
-                    <p>+880-1521536082</p>
-                    <p>Zahir & brothers, badurtala, bahaddarhat, chottogram</p>
+                    <p id="nameT1">Afif Hossain Irfan.</p>
+                    <p id="contactT">+880-1521536082</p>
+                    <p id="addressT">Zahir & brothers, badurtala, bahaddarhat, chottogram, bangladesh.</p>
 
                     <hr/>
 
-                    <p><a href="#1">facebook</a></p>
-                    <p><a href="#1">instagram</a></p>
-                    <p><a href="#1">linkedin</a></p>
+                    <p><a id="fbT" href="#1">facebook</a></p>
+                    <p><a id="igT" href="#1">instagram</a></p>
+                    <p><a id="liT" href="#1">linkedin</a></p>
 
                 </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-8 py-5">
 
-                <h1 class="text-center" style="font-weight: 1000">
+                <h1 id="nameT2" class="text-center" style="font-weight: 1000">
                     Afif Hossain Irfan
                 </h1>
 
                 <div class="card mt-4">
+                
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatum laboriosam
+                            corrupti aperiam consequatur perspiciatis voluptas soluta saepe delectus earum quasi debitis sequi hic ratione
+                            eligendi esse cupiditate sed excepturi neque. Voluptatem voluptas sit deleniti, officia facilis unde aspernatur,
+                            beatae in quidem quas id aperiam, placeat deserunt inventore. Odit, sint.
+                        </p>
+                    </div>
+                
+                </div>
 
-                    <div class="card-header background">Objective</div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatum laboriosam corrupti aperiam consequatur perspiciatis voluptas soluta saepe delectus earum quasi debitis sequi hic ratione eligendi esse cupiditate sed excepturi neque. Voluptatem voluptas sit deleniti, officia facilis unde aspernatur, beatae in quidem quas id aperiam, placeat deserunt inventore. Odit, sint.</div>
+                <div class="card mt-4">
+                
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, doloremque.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, doloremque.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, doloremque.</li>
+                        </ul>
+                    </div>
+                
+                </div>
 
+                <div class="card mt-4">
+                
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, doloremque.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, doloremque.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, doloremque.</li>
+                        </ul>
+                    </div>
+                
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="printCV()" class="btn background">Print CV</button>
                 </div>
 
             </div>
